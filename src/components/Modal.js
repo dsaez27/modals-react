@@ -46,7 +46,6 @@ export const Modal = ({
 
 const size = {
     xs: '767px',
-
     sm: '768px',
 };
 
@@ -72,11 +71,13 @@ const Overlay = styled.div`
 
 const ContenedorModal = styled.div`
     @media ${device.xs} {
-        width: 85%;
+        max-width: 85%;
+        max-height: 90vh;
         margin: 15px 0;
     }
     @media ${device.sm} {
-        width: 500px;
+        max-width: 500px;
+        max-height: 90vh;
         margin: 15px 0;
     }
 
